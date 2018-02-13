@@ -16,11 +16,12 @@ def word_substituter(tweet)
   words = tweet.downcase.split[" "]
   words.each do |word|
     if dictionary.keys.include?(word)
-      while 
+      while words.index(word) != nil
+        words[words.index(word)] = dictionary[word]
+      end
     end
   end
 end
 
-a = [1,2,3,4,5,6,7,7,7,8]
 
   
