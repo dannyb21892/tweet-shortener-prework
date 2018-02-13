@@ -13,9 +13,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  words = tweet.downcase.split[" "]
+  words = tweet.split[" "]
   words.each do |word|
-    if dictionary.keys.include?(word)
+    if dictionary.keys.include?(word.downcase)
       while words.index(word) != nil
         words[words.index(word)] = dictionary[word]
       end
@@ -23,5 +23,7 @@ def word_substituter(tweet)
   end
 end
 
-
+a = "Posdf"
+puts a.downcase
+puts a
   
