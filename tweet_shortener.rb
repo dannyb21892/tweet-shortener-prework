@@ -1,5 +1,5 @@
 # Write your code here.
-def dictionary(tweet)
+def dictionary
   subs = {"hello" => "hi",
           "to" => "2",
           "two" => "2",
@@ -10,3 +10,4 @@ def dictionary(tweet)
           "you" => "u",
           "at" => "@",
           "and" => "&"}
+end
