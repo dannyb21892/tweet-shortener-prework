@@ -13,4 +13,10 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  words = tweet
+  words = tweet.downcase.split[" "]
+  words.each do |word|
+    if dictionary.keys.include?(word)
+    end
+  end
+end
+  
