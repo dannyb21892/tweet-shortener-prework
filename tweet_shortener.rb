@@ -17,13 +17,10 @@ def word_substituter(tweet)
   words.each do |word|
     if dictionary.keys.include?(word.downcase)
       while words.index(word) != nil
-        words[words.index(word)] = dictionary[word]
+        words[words.index(word)] = dictionary[word.downcase]
       end
     end
   end
+  words.join(" ")
 end
-
-a = "Posdf"
-puts a.downcase
-puts a
   
